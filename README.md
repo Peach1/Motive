@@ -25,9 +25,9 @@ No manual memory allocation, no confusing naming
 
 ```typescript
 
-let PI = 3.14
+let today = "Friday";
 
-const PI = 3.14
+const PI = 3.14 // use 'const' to declare unchanging values; semicolons are optional in Motive
 
 fn add(x : int, y : int) -> int // fn stands for function; 'int' stands for integer(a whole number)
 {
@@ -35,6 +35,14 @@ fn add(x : int, y : int) -> int // fn stands for function; 'int' stands for inte
 }
 
 fn add(x,y) { x+y } // Generic functions are made by omitting types
+
+fn example()
+{
+    let x = PI*2.0; // 'let' is a variable that can't be modified
+    var y = x; // 'var' is a variable than can *can* be modified
+    y *= 2;
+    y // Functions return the last expression in a block 'return' also works too
+}
 
 ```
  
