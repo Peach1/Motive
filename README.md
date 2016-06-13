@@ -1,5 +1,43 @@
 # Motive
-A modern language for 3D video games
+
+Motive is a high level programming language designed for 3D video games and interactive multimedia.
+It's a single language designed to be natively compiled to machine code
+or used as an embedded scripting language.
+Motive is a mix of popular programming languages in one minimalistic user friendly design
+
+It's a C-like language primarily influenced by Swift, Rust, GLSL, Haskell, C++, Standard ML, Lua, and (The good parts of)Javascript.
+
+Designed to be easy to use, even for complete beginners -
+No manual memory allocation, no confusing naming
+
+## Features
+
+* Statically typed - Variable types don't change, large code bases are easier to manage
+* Type inference - All the fun of a dynamic language, but without the runtime type errors 
+* High Level Standard libraries: vector math, matrixes, text processing, image processing and more are built in
+* Unicode support built in (grapheme clusters, oh my!)
+* First class functions - pass around functions as easily as any other data type
+* Polymorphic lambdas - write a function once, and it works for all compatible types 
+* First class types - Pass around type information at compile time using the same language
+* Automatic Reference counting with cycle detection and no garbage collector
+* User friendly compiler error messages
+
+
+```typescript
+
+let PI = 3.14
+
+const PI = 3.14
+
+fn add(x : int, y : int) -> int // fn stands for function; 'int' stands for integer(a whole number)
+{
+    return x+y;
+}
+
+fn add(x,y) { x+y } // Generic functions are made by omitting types
+
+```
+ 
 
 
 
