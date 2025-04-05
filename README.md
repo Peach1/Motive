@@ -1,5 +1,5 @@
 # Motive
-The companion scripting language for Stainless Steel.
+The companion scripting language for [Stainless Steel](https://github.com/Peach1/Stainless).
 
 Motive is a high level programming language designed for 3D video games and interactive multimedia.
 It's a single language designed to be natively compiled to machine code
