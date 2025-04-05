@@ -1,4 +1,5 @@
 # Motive
+The companion scripting language for Stainless Steel.
 
 Motive is a high level programming language designed for 3D video games and interactive multimedia.
 It's a single language designed to be natively compiled to machine code
@@ -34,14 +35,16 @@ fn add(x : int, y : int) -> int // fn stands for function; 'int' stands for inte
     return x+y;
 }
 
-fn add(x,y) { x+y } // Generic functions are made by omitting types
+fn add2(x,y) { x+y } // Generic functions are made by omitting types
+
+int wow(int x, int y) { return x+y; } // C style function syntax also works too (the power of backward compatiblity!)
 
 fn example()
 {
     let x = PI*2.0; // 'let' is a variable that can't be modified
-    var y = x; // 'var' is a variable than can *can* be modified
+    mut y = x; // 'mut' is a variable than can *can* be modified
     y *= 2;
-    y // Functions return the last expression in a block 'return' also works too
+    y // Functions return the last expression in a block. 'return' also works too
 }
 
 ```
